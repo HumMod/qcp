@@ -1,0 +1,1369 @@
+{ NOTE 1 "Acid / Base Patient #5" }
+{ VAR "PI" 3.14159265359 }
+{ VAR "BREAKFLAG" 0. }
+{ VAR "SOLNINT" 10080. }
+{ VAR "DISPINT" 1440. }
+{ VAR "DX" 12.9736685698663 }
+{ VAR "X" 0. }
+{ VAR "NORMAL" 1.60889149449141 }
+{ VAR "RANDOM" -0.667592394787439 }
+{ VAR "LIMITDX" 1.e+308 }
+{ VAR "Right Hemithorax, Normal Pressure" -4. }
+{ VAR "Right Hemithorax, Chest Open" 0. }
+{ VAR "Left Hemithorax, Normal Pressure" -4. }
+{ VAR "Left Hemithorax, Chest Open" 0. }
+{ VAR "Gas O2 Tank Valve, Percent" 21. }
+{ VAR "Gas N2 Tank Valve, Percent" 79. }
+{ VAR "Gas CO2 Tank Valve, Percent" 0. }
+{ VAR "Gas CO Tank Valve, Parts/Million" 0. }
+{ VAR "Gas Anesthesia Tank Valve, Percent" 0. }
+{ VAR "Pressure Chamber, Pressure (Atm)" 1. }
+{ VAR "Altitude, Feet" 0. }
+{ VAR "Air Supply, Source Of Mixture" 0. }
+{ VAR "Air Supply, Source Of Pressure" 0. }
+{ VAR "Ventilation, Dead Space Min" 60. }
+{ VAR "Ventilation, Dead Space Slope" 0.2 }
+{ VAR "Ventilator, Tidal Volume" 0. }
+{ VAR "Ventilator, Rate" 0. }
+{ VAR "Ventilator, Switch" 0. }
+{ VAR "Respiratory Center, Peripheral Base" 0.4 }
+{ VAR "Respiratory Center, Central Base" 0. }
+{ VAR "Respiratory Center, Level" 0. }
+{ VAR "Respiratory Center, Clamp" 0. }
+{ VAR "Pulmonary Membrane, Thickness" 0.6 }
+{ VAR "Pulmonary Membrane, Total Area" 80. }
+{ VAR "Lung O2, Uptake" 249.337117418977 }
+{ VAR "Lung Excess H2O, Permeability" 3. }
+{ VAR "Lung Excess H2O, Volume (mL)" 0. }
+{ VAR "Lung Blood Flow, Basic R/L Shunt" 220. }
+{ VAR "CO Permeability, Level" 17. }
+{ VAR "CO Permeability, Clamp" 0. }
+{ VAR "CO Permeability, CO/O2 Ratio" 0.81 }
+{ VAR "CO, Extravascular Space" 0.16 }
+{ VAR "CO, Endogenous Production" 7.e-003 }
+{ VAR "CO, Haldane Factor" 230. }
+{ VAR "CO, Mass" 12.770636660537 }
+{ VAR "Tricuspid Valve, Closed Area" 0. }
+{ VAR "Tricuspid Valve, Open Area" 7.4 }
+{ VAR "Pulmonic Valve, Closed Area" 0. }
+{ VAR "Pulmonic Valve, Open Area" 3.3 }
+{ VAR "Mitral Valve, Closed Area" 0. }
+{ VAR "Mitral Valve, Open Area" 5. }
+{ VAR "Aortic Valve, Closed Area" 0. }
+{ VAR "Aortic Valve, Open Area" 3.3 }
+{ VAR "Skin Vascularity, Time Delay" 30. }
+{ VAR "Skin Vascularity, Change" 3.6667841912706e-006 }
+{ VAR "Skin Vascularity, Vessels" 1.04161870756789 }
+{ VAR "Skin Structure, Change" 0. }
+{ VAR "Skin Structure, Effect" 1. }
+{ VAR "Skin Cals Used, Normal" 43. }
+{ VAR "Skin Lactate, Has Substrate" 1. }
+{ VAR "Skin Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Skin Lactate, Metabolism K" 1. }
+{ VAR "Skin Lactate, Formation K" 5.e-003 }
+{ VAR "Skin Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Skin Lactate, Change" 1.45740067987389e-004 }
+{ VAR "Skin Lactate, Mass (mEq/kG)" 1.79819338727695 }
+{ VAR "Skin Function, Failed" 0. }
+{ VAR "Skin Fuel, Use Rate Constant" 0.5 }
+{ VAR "Skin Fuel, Use Change" 1.71150206072607e-017 }
+{ VAR "Skin Fuel, Fractional Use" 1. }
+{ VAR "Skin Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Skin Perfusion, pO2" 34.8184424138181 }
+{ VAR "Skin Perfusion, Basic Conduct." 1.6 }
+{ VAR "Skin Composition, Solid Mass" 1340. }
+{ VAR "Skin CO2, Diffusion Coefficient" 0.2 }
+{ VAR "Skin HCO3-, Change" 2.076232083961e-002 }
+{ VAR "Skin HCO3-, Mass" 155.061735347288 }
+{ VAR "Skin Perfusion, Pump Setting" 0. }
+{ VAR "Skin Perfusion, Pump Switch" 0. }
+{ VAR "Skin a-Receptors, Level" 0. }
+{ VAR "Skin a-Receptors, Clamp" 0. }
+{ VAR "Skin pH, Basic SID" 9.e-002 }
+{ VAR "Respiratory Muscle Work, Efficiency (%)" 20. }
+{ VAR "Respiratory Muscle Vascularity, Time Delay" 20. }
+{ VAR "Respiratory Muscle Vascularity, Change" 5.43275748072179e-006 }
+{ VAR "Respiratory Muscle Vascularity, Vessels" 1.0002377375862 }
+{ VAR "Respiratory Muscle Structure, Change" 0. }
+{ VAR "Respiratory Muscle Structure, Effect" 1. }
+{ VAR "Respiratory Muscle O2 Needed, Delay Tau" 0.2 }
+{ VAR "Respiratory Muscle O2 Needed, Change" -1.07544200509596e-002 }
+{ VAR "Respiratory Muscle O2, Need" 4.242453863522 }
+{ VAR "Respiratory Muscle Cals Needed, Normal" 10. }
+{ VAR "Respiratory Muscle Lactate, Has Substrate" 1. }
+{ VAR "Respiratory Muscle Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Respiratory Muscle Lactate, Metabolism K" 1. }
+{ VAR "Respiratory Muscle Lactate, Formation K" 5.e-003 }
+{ VAR "Respiratory Muscle Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Respiratory Muscle Lactate, Change" 2.47584814611176e-005 }
+{ VAR "Respiratory Muscle Lactate, Mass (mEq/kG)" 1.76607459876731 }
+{ VAR "Respiratory Muscle Glycogen, [Insulin] Delay K" 2.e-002 }
+{ VAR "Respiratory Muscle Glycogen, [Insulin] Delayed" 18.6676997375126 }
+{ VAR "Respiratory Muscle Glycogen, Adequate Stores" 1. }
+{ VAR "Respiratory Muscle Glycogen, Basic Made" 1. }
+{ VAR "Respiratory Muscle Glycogen, Mass (G)" 46.8674558623865 }
+{ VAR "Respiratory Muscle Function, Failed" 0. }
+{ VAR "Respiratory Muscle Fuel, Use Rate Constant" 0.5 }
+{ VAR "Respiratory Muscle Fuel, Use Change" 0. }
+{ VAR "Respiratory Muscle Fuel, Fractional Use" 1. }
+{ VAR "Respiratory Muscle Perfusion, Metab. Delay Tau" 0.3 }
+{ VAR "Respiratory Muscle Perfusion, Metab. Delay Derv" 0. }
+{ VAR "Respiratory Muscle Perfusion, Metab. Delay Eff" 1. }
+{ VAR "Respiratory Muscle Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Respiratory Muscle Perfusion, pO2" 35.4328636232211 }
+{ VAR "Respiratory Muscle Perfusion, Basic Conduct." 1.1 }
+{ VAR "Respiratory Muscle Composition, Solid Mass" 1330. }
+{ VAR "Respiratory Muscle CO2, Diffusion Coefficient" 0.3 }
+{ VAR "Respiratory Muscle HCO3-, Change" 2.76117814509418e-003 }
+{ VAR "Respiratory Muscle HCO3-, Mass" 151.388941438674 }
+{ VAR "Respiratory Muscle Perfusion, Pump Setting" 0. }
+{ VAR "Respiratory Muscle Perfusion, Pump Switch" 0. }
+{ VAR "Respiratory Muscle a-Receptors, Level" 0. }
+{ VAR "Respiratory Muscle a-Receptors, Clamp" 0. }
+{ VAR "Respiratory Muscle pH, Basic SID" 9.e-002 }
+{ VAR "Right Heart Vascularity, Time Delay" 30. }
+{ VAR "Right Heart Vascularity, Change" 3.17821562043114e-006 }
+{ VAR "Right Heart Vascularity, Vessels" 1.03487170581918 }
+{ VAR "Right Heart Structure, Change" 0. }
+{ VAR "Right Heart Structure, Effect" 1. }
+{ VAR "Right Heart Pumping, Stiffness" 8.8e-003 }
+{ VAR "Right Heart Cals Used, Normal" 3. }
+{ VAR "Right Heart Lactate, Has Substrate" 1. }
+{ VAR "Right Heart Lactate, Inhibition K" 2.e-004 }
+{ VAR "Right Heart Lactate, Metabolism K" 1. }
+{ VAR "Right Heart Lactate, Formation K" 5.e-003 }
+{ VAR "Right Heart Lactate, Diffusion Coef." 1.e-003 }
+{ VAR "Right Heart Lactate, Change" -4.06857587147359e-005 }
+{ VAR "Right Heart Lactate, Mass (mEq/kG)" 4.23614872474697 }
+{ VAR "Right Heart Function, Failed" 0. }
+{ VAR "Right Heart Fuel, Use Rate Constant" 0.5 }
+{ VAR "Right Heart Fuel, Use Change" 0. }
+{ VAR "Right Heart Fuel, Fractional Use" 1. }
+{ VAR "Right Heart Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Right Heart Perfusion, pO2" 14.7251430346468 }
+{ VAR "Right Heart Perfusion, Basic Conduct." 0.4 }
+{ VAR "Right Heart Perfusion, Large Vessel Base" 10. }
+{ VAR "Right Heart Infarct, Dead Tissue Change" 0. }
+{ VAR "Right Heart Infarct, Dead Tissue Fraction" 0. }
+{ VAR "Right Heart Infarct, Dead Tissue 1/Tau" 4.e-003 }
+{ VAR "Right Heart Infarct, Area (%)" 0. }
+{ VAR "Right Heart Muscle Protein, Synthesis Tau" 10. }
+{ VAR "Right Heart Muscle Protein, Total Mass" 13.7500632962761 }
+{ VAR "Right Heart Assist, Setting" 0. }
+{ VAR "Right Heart Assist, Switch" 0. }
+{ VAR "Right Heart Assist, Contractility" 0. }
+{ VAR "Right Heart Contractility, Basic (%)" 100. }
+{ VAR "Right Heart Composition, Other Solids" 5.4 }
+{ VAR "Right Heart CO2, Diffusion Coefficient" 0.2 }
+{ VAR "Right Heart HCO3-, Change" 4.33898877833968e-005 }
+{ VAR "Right Heart HCO3-, Mass" 2.34070328526936 }
+{ VAR "Right Heart B-Receptors, Level" 0. }
+{ VAR "Right Heart B-Receptors, Clamp" 0. }
+{ VAR "Right Heart a-Receptors, Level" 0. }
+{ VAR "Right Heart a-Receptors, Clamp" 0. }
+{ VAR "Right Heart Perfusion, Pump Setting" 0. }
+{ VAR "Right Heart Perfusion, Pump Switch" 0. }
+{ VAR "Right Heart pH, Basic SID" 9.e-002 }
+{ VAR "Renin Synthesis, Basic Rate" 290. }
+{ VAR "Renin Synthesis, Level" 0. }
+{ VAR "Renin Synthesis, Clamp" 0. }
+{ VAR "Renin Synthesis, Rate Delay - Tau" 60. }
+{ VAR "Renin Synthesis, Rate Delay - Change" -8.08121320139711e-003 }
+{ VAR "Renin Synthesis, Rate Delayed" 266.823033070532 }
+{ VAR "Renin Secretion, Tumor Secretion" 0. }
+{ VAR "Renin Secretion, Secretion Base" 3.3e-003 }
+{ VAR "Renin Secretion, Level" 0. }
+{ VAR "Renin Secretion, Clamp" 0. }
+{ VAR "Renin Granules, Flow From K" 1.e-003 }
+{ VAR "Renin Granules, Flow To K" 1.e-002 }
+{ VAR "Renin Granules, Change" -0.677067081126214 }
+{ VAR "Renin Granules, Mass" 876678.439734938 }
+{ VAR "Renin Free, Change" 0.3836558827546 }
+{ VAR "Renin Free, Mass" 87605.5529421697 }
+{ VAR "Renin ECFV, Decomposition K" 7.e-004 }
+{ VAR "Renin ECFV, Extraction" 0.26 }
+{ VAR "Renin ECFV, Change" 1.12902049365205 }
+{ VAR "Renin ECFV, Mass" 16593.5627241009 }
+{ VAR "AII ECFV, CE Block (%)" 0. }
+{ VAR "AII ECFV, Basic CE Activity" 30. }
+{ VAR "AII ECFV, Pump Setting" 60. }
+{ VAR "AII ECFV, Pump Switch" 0. }
+{ VAR "AII ECFV, Level" 20. }
+{ VAR "AII ECFV, Clamp" 0. }
+{ VAR "Regional Pressure, Lower Hydraulic Grad" 10. }
+{ VAR "Regional Pressure, Middle Hydraulic Grad" 17. }
+{ VAR "Regional Pressure, Upper Hydraulic Grad" 17. }
+{ VAR "Posture Function, Posture Effect Leg Vein" 0.2 }
+{ VAR "Posture Function, Posture Effect Leg Artery" 0. }
+{ VAR "Posture Function, Posture Effect" 0. }
+{ VAR "Posture Function, Tilt Degrees" 0. }
+{ VAR "Posture Function, Lower Torso Gradient Vein" 10. }
+{ VAR "Posture Function, Lower Torso Gradient Artery" 0. }
+{ VAR "Posture Function, Middle Torso Gradient" 0. }
+{ VAR "Posture Function, Upper Torso Gradient" 0. }
+{ VAR "Posture Function, Carotid Sinus Gradient" 0. }
+{ VAR "Posture Function, Gravity (Gz)" 1. }
+{ VAR "Posture Function, Brain Gradient" 0. }
+{ VAR "Posture Energy, Basic Tilting" 0. }
+{ VAR "Posture Energy, Basic Standing" 500. }
+{ VAR "Posture Energy, Basic Sitting" 250. }
+{ VAR "Posture Energy, Cals" 0. }
+{ VAR "Posture Control, Recent Coma" 0. }
+{ VAR "Posture Control, Default Posture" 1. }
+{ VAR "Posture Control, Is Restrained" 0. }
+{ VAR "Posture Control, Restraint" 0. }
+{ VAR "Posture Control, Result" 1. }
+{ VAR "Posture Control, Goal" 3. }
+{ VAR "Posture Control, Is Tilting" 0. }
+{ VAR "Posture Control, Is Standing" 0. }
+{ VAR "Posture Control, Is Sitting" 0. }
+{ VAR "Posture Control, Is Lying" 1. }
+{ VAR "Leg Volume, Other" 12.25 }
+{ VAR "Leg Volume, Normal" 17. }
+{ VAR "Leg Muscle Pump, Patent Valves" 1. }
+{ VAR "Leg Muscle Pump, Resting Contractions" 0. }
+{ VAR "Sequestered Blood Vein, Basic Capacity" 1. }
+{ VAR "Sequestered Blood a-Receptors, Level" 0. }
+{ VAR "Sequestered Blood a-Receptors, Clamp" 0. }
+{ VAR "Sequestered Blood, Muscle Anti-G Tone" 1. }
+{ VAR "Sequestered Blood, Muscle Anti-G Trigger" 1.5 }
+{ VAR "Sequestered Blood, Muscle Normal Tone" 1. }
+{ VAR "Sequestered Blood, External Pressure" 0. }
+{ VAR "Other Tissue Vascularity, Time Delay" 30. }
+{ VAR "Other Tissue Vascularity, Change" 3.71444338725945e-006 }
+{ VAR "Other Tissue Vascularity, Vessels" 1.0386259466131 }
+{ VAR "Other Tissue Structure, Change" 0. }
+{ VAR "Other Tissue Structure, Effect" 1. }
+{ VAR "Other Tissue Cals Used, Normal" 50. }
+{ VAR "Other Tissue Lactate, Has Substrate" 1. }
+{ VAR "Other Tissue Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Other Tissue Lactate, Metabolism K" 1. }
+{ VAR "Other Tissue Lactate, Formation K" 5.e-003 }
+{ VAR "Other Tissue Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Other Tissue Lactate, Change" 1.15263872863118e-005 }
+{ VAR "Other Tissue Lactate, Mass (mEq/kG)" 1.76888927660284 }
+{ VAR "Other Tissue Function, Failed" 0. }
+{ VAR "Other Tissue Fuel, Use Rate Constant" 0.5 }
+{ VAR "Other Tissue Fuel, Use Change" 0. }
+{ VAR "Other Tissue Fuel, Fractional Use" 1. }
+{ VAR "Other Tissue Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Other Tissue Perfusion, pO2" 41.5633444654326 }
+{ VAR "Other Tissue Perfusion, Basic Conduct." 4.2 }
+{ VAR "Other Tissue Composition, Solid Mass" 2000. }
+{ VAR "Other Tissue CO2, Diffusion Coefficient" 0.4 }
+{ VAR "Other Tissue HCO3-, Change" 2.81721741028817e-003 }
+{ VAR "Other Tissue HCO3-, Mass" 225.028731256594 }
+{ VAR "Other Tissue Perfusion, Pump Setting" 0. }
+{ VAR "Other Tissue Perfusion, Pump Switch" 0. }
+{ VAR "Other Tissue a-Receptors, Level" 0. }
+{ VAR "Other Tissue a-Receptors, Clamp" 0. }
+{ VAR "Other Tissue pH, Basic SID" 9.e-002 }
+{ VAR "Symp's Kidney, Clamp Level" 0. }
+{ VAR "Symp's Kidney, Clamp Switch" 0. }
+{ VAR "Symp's Kidney, Nerve Activity (x Norm)" 1.00852448789699 }
+{ VAR "Symp's Ganglia, Block Percent" 0. }
+{ VAR "Symp's Ganglia, Stimulator Setting" 0. }
+{ VAR "Symp's Ganglia, Stimulator Switch" 0. }
+{ VAR "Symp's CNS, Clamp Level" 0. }
+{ VAR "Symp's CNS, Clamp Switch" 0. }
+{ VAR "Symp's CNS, Low Pressure Sensitivity" 1. }
+{ VAR "Symp's CNS, Baroreceptor Sensitivity" 1. }
+{ VAR "Symp's CNS, Imp. Low Limit" 0. }
+{ VAR "Symp's CNS, Nerve Activity (x Norm)" 1.06442006979441 }
+{ VAR "Chemos -> Symp's, Adapt Delay Tau" 15. }
+{ VAR "Chemos -> Symp's, Adapt Delay Change" 2.91336526555687e-005 }
+{ VAR "Chemos -> Symp's, Adapt Delay" 1.39317881164772 }
+{ VAR "Chemos -> Symp's, Onset Delay Tau" 5. }
+{ VAR "Chemos -> Symp's, Onset Delay Change" -1.15137757542914e-003 }
+{ VAR "Chemos -> Symp's, Onset Delay" 2.02348206562065 }
+{ VAR "NE Pump, Setting" 0. }
+{ VAR "NE Pump, Switch" 0. }
+{ VAR "Epi Pump, Setting" 0. }
+{ VAR "Epi Pump, Switch" 0. }
+{ VAR "NE Pool, Clear K" 4.5 }
+{ VAR "NE Pool, Derv" -1.88621613259109e-002 }
+{ VAR "NE Pool, Mass" 3814.00609720738 }
+{ VAR "Epi Pool, Clear K" 9.4 }
+{ VAR "Epi Pool, Derv" -2.94833518032375e-003 }
+{ VAR "Epi Pool, Mass" 591.703446704785 }
+{ VAR "Pheochromocytoma, Noise Source" 0.796212652974029 }
+{ VAR "Pheochromocytoma, End Next Episode" 0. }
+{ VAR "Pheochromocytoma, Start Next Episode" 0. }
+{ VAR "Pheochromocytoma, In Episode" 0. }
+{ VAR "Pheochromocytoma, Release Mode" 0. }
+{ VAR "Pheochromocytoma, Epi %" 80. }
+{ VAR "Pheochromocytoma, Epi Fraction" 0.8 }
+{ VAR "Pheochromocytoma, Fractional Secretion" 4.e-003 }
+{ VAR "Pheochromocytoma, Severity" 0. }
+{ VAR "Pheochromocytoma, Change" 0. }
+{ VAR "Pheochromocytoma, Mass" 0. }
+{ VAR "Vagal Parasympathetics, Block (%)" 0. }
+{ VAR "Vagal Parasympathetics, Stimulator Setting" 0. }
+{ VAR "Vagal Parasympathetics, Stimulator Switch" 0. }
+{ VAR "Heart Mechanoreceptor, Clamp Level" 0. }
+{ VAR "Heart Mechanoreceptor, Clamp Switch" 0. }
+{ VAR "Low Pressure Receptor, Adapted Tau" 30. }
+{ VAR "Low Pressure Receptor, Adapted Derv" 1.38809109511501e-005 }
+{ VAR "Low Pressure Receptor, Adapted Pres." 6.08847949356476 }
+{ VAR "Low Pressure Receptor, Clamp Level" 0. }
+{ VAR "Low Pressure Receptor, Clamp Switch" 0. }
+{ VAR "IV Epi Injection, Cumulative Dose" 0. }
+{ VAR "IV Epi Injection, Total Number" 0. }
+{ VAR "IV Epi Injection, Dose" 1. }
+{ VAR "IV Epi Injection, Timespan" 15. }
+{ VAR "IV Epi Injection, Change" 0. }
+{ VAR "IV Epi Injection, Bolus (mG)" 0. }
+{ VAR "Cushing Response, Strength" 8. }
+{ VAR "Cushing Response, Fatigue Tau" 10. }
+{ VAR "Cushing Response, Fatigue" 0. }
+{ VAR "CNS Trophic Factor, Delay Tau" 8. }
+{ VAR "CNS Trophic Factor, Effect" 1. }
+{ VAR "Carotid Chemoreceptors, Acclimation Tau" 20. }
+{ VAR "Carotid Chemoreceptors, Acclimation Change" -2.23094953649566e-006 }
+{ VAR "Carotid Chemoreceptors, Acclimation" 1.1960632874273 }
+{ VAR "Carotid Chemoreceptors, Clamp Level" 0. }
+{ VAR "Carotid Chemoreceptors, Clamp Switch" 0. }
+{ VAR "Beta-Receptor Blockade, Percent" 0. }
+{ VAR "Alpha-Receptor Blockade, Percent" 0. }
+{ VAR "Baroreflex Adapted, Tau" 10. }
+{ VAR "Baroreflex Adapted, Change" -5.78129354107511e-004 }
+{ VAR "Baroreflex Adapted, Pressure" 97.4094734452588 }
+{ VAR "Adrenal Nerve, Level" 0. }
+{ VAR "Adrenal Nerve, Clamp" 0. }
+{ VAR "Adrenal NE Secretion, Basic Rate" 220. }
+{ VAR "Adrenal Epi Secretion, Basic Rate" 375. }
+{ VAR "TGF Vascular, Basic Effect" 1. }
+{ VAR "TGF Vascular, Level" 1. }
+{ VAR "TGF Vascular, Clamp" 0. }
+{ VAR "TGF Renin, Basic Effect" 1. }
+{ VAR "TGF Renin, Level" 1. }
+{ VAR "TGF Renin, Clamp" 0. }
+{ VAR "TGF, Basic Offset" 0. }
+{ VAR "TGF, Level" 1. }
+{ VAR "TGF, Clamp" 0. }
+{ VAR "Proximal Tubule ANP, Level" 1. }
+{ VAR "Proximal Tubule ANP, Clamp" 0. }
+{ VAR "Proximal Tubule Na+, Max Reab" 14. }
+{ VAR "Proximal Tubule Na+, Basic Fraction" 0.58 }
+{ VAR "Proximal Tubule NH3, Delay Tau" 3. }
+{ VAR "Proximal Tubule NH3, Chronic Effect Delayed" 1.31205120397506 }
+{ VAR "Proximal Tubule NH3, Basic Rate" 4.e-002 }
+{ VAR "Renal Medulla Urea, Countercurrent Efficiency" 98. }
+{ VAR "Renal Medulla Urea, Change" -6.36383418057657e-002 }
+{ VAR "Renal Medulla Urea, Mass" 762.067763773564 }
+{ VAR "Renal Medulla Na+, Countercurrent Efficiency" 97. }
+{ VAR "Renal Medulla Na+, Change" 1.98346218060581e-003 }
+{ VAR "Renal Medulla Na+, Mass" 17.5331471971095 }
+{ VAR "Loop Of Henle Na+, Max Reab" 7. }
+{ VAR "Loop Of Henle Na+, Basic Fraction" 0.75 }
+{ VAR "Loop Of Henle H2O, % Loop H2O Perm" 37. }
+{ VAR "Kidney Ketoacids, Maximum Excretion" 30. }
+{ VAR "Kidney Interstitium, Level" 4. }
+{ VAR "Kidney Interstitium, Clamp" 0. }
+{ VAR "Kidney Glucose, Tubular Max" 250. }
+{ VAR "Glomerulus, Renal Pelvis Pressure" 0. }
+{ VAR "Glomerulus, Proximal Tubule Conductance" 7. }
+{ VAR "Glomerulus, Protein Permeability" 0. }
+{ VAR "Glomerulus, Imp. Lower Limit" 0. }
+{ VAR "Glomerulus, Permeability" 20. }
+{ VAR "Glomerulus, Filtration Rate" 122.984254774289 }
+{ VAR "Distal Tubule Na+, Max Reab" 2. }
+{ VAR "Distal Tubule Na+, Aldo Clamp Level" 1. }
+{ VAR "Distal Tubule Na+, Aldo Clamp Switch" 0. }
+{ VAR "Distal Tubule Na+, Basic Fraction" 0.75 }
+{ VAR "Distal Tubule K+, Aldo Clamp Level" 1. }
+{ VAR "Distal Tubule K+, Aldo Clamp Switch" 0. }
+{ VAR "Distal Tubule K+, Basic Outflow" 5.e-002 }
+{ VAR "Collecting Duct Urea, Perm Base" 8. }
+{ VAR "Collecting Duct Na+, Max Reab" 0.7 }
+{ VAR "Collecting Duct Na+, ANP Level" 1. }
+{ VAR "Collecting Duct Na+, ANP Clamp" 0. }
+{ VAR "Collecting Duct Na+, Reab Base" 0.75 }
+{ VAR "Collecting Duct H2O, Perm Base" 1. }
+{ VAR "Collecting Duct H2O, Perm Level" 1. }
+{ VAR "Collecting Duct H2O, Perm Clamp" 0. }
+{ VAR "Collecting Duct H2O Channel, Scale" 1.25e-004 }
+{ VAR "Collecting Duct H2O Channel, Change" 1.06164298486392e-005 }
+{ VAR "Collecting Duct H2O Channel, F2" 4.e-004 }
+{ VAR "Collecting Duct H2O Channel, Inactive" 1.15900894595722 }
+{ VAR "Skeletal Muscle Vascularity, Normal pO2" 38. }
+{ VAR "Skeletal Muscle Vascularity, Time Delay" 20. }
+{ VAR "Skeletal Muscle Vascularity, Change" 0. }
+{ VAR "Skeletal Muscle Vascularity, Vessels" 1. }
+{ VAR "Skeletal Muscle Structure, Change" 0. }
+{ VAR "Skeletal Muscle Structure, Effect" 1. }
+{ VAR "Skeletal Muscle Pumping, Conductance Tau" 5. }
+{ VAR "Skeletal Muscle Pumping, Conductance Change" 0. }
+{ VAR "Skeletal Muscle Pumping, Conductance Effect" 1. }
+{ VAR "Skeletal Muscle O2 Needed, Delay Tau" 0.2 }
+{ VAR "Skeletal Muscle O2 Needed, Change" -3.89974411529252e-002 }
+{ VAR "Skeletal Muscle O2, Need" 30.263116750281 }
+{ VAR "Skeletal Muscle Cals Needed, Normal" 145. }
+{ VAR "Skeletal Muscle Lactate, Has Substrate" 1. }
+{ VAR "Skeletal Muscle Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Skeletal Muscle Lactate, Metabolism K" 1. }
+{ VAR "Skeletal Muscle Lactate, Formation K" 5.e-003 }
+{ VAR "Skeletal Muscle Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Skeletal Muscle Lactate, Change" 4.85136473062571e-005 }
+{ VAR "Skeletal Muscle Lactate, Mass (mEq/kG)" 1.9027511426036 }
+{ VAR "Skeletal Muscle Heat, Heat" 6964.1325266616 }
+{ VAR "Skeletal Muscle Glycogen, [Insulin] Delay K" 2.e-002 }
+{ VAR "Skeletal Muscle Glycogen, [Insulin] Delayed" 18.6676997375126 }
+{ VAR "Skeletal Muscle Glycogen, Adequate Stores" 1. }
+{ VAR "Skeletal Muscle Glycogen, Basic Made" 1. }
+{ VAR "Skeletal Muscle Glycogen, Mass (G)" 544.834641136078 }
+{ VAR "Skeletal Muscle Function, Failed" 0. }
+{ VAR "Skeletal Muscle Fuel, Use Rate Constant" 0.5 }
+{ VAR "Skeletal Muscle Fuel, Use Change" 0. }
+{ VAR "Skeletal Muscle Fuel, Fractional Use" 1. }
+{ VAR "Skeletal Muscle Perfusion, Metab. Delay Tau" 0.8 }
+{ VAR "Skeletal Muscle Perfusion, Metab. Delay Derv" 0. }
+{ VAR "Skeletal Muscle Perfusion, Metab. Delay Eff" 1. }
+{ VAR "Skeletal Muscle Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Skeletal Muscle Perfusion, pO2" 33.9628952057902 }
+{ VAR "Skeletal Muscle Perfusion, Basic Conduct." 7.2 }
+{ VAR "Skeletal Muscle Composition, Solid Mass" 9200. }
+{ VAR "Skeletal Muscle CO2, Diffusion Coefficient" 100. }
+{ VAR "Skeletal Muscle HCO3-, Change" 2.61138038900414e-003 }
+{ VAR "Skeletal Muscle HCO3-, Mass" 310.165511295157 }
+{ VAR "Skeletal Muscle Perfusion, Pump Setting" 0. }
+{ VAR "Skeletal Muscle Perfusion, Pump Switch" 0. }
+{ VAR "Skeletal Muscle a-Receptors, Level" 0. }
+{ VAR "Skeletal Muscle a-Receptors, Clamp" 0. }
+{ VAR "Skeletal Muscle pH, Basic SID" 5.e-002 }
+{ VAR "Metaboreflex, Level" 0. }
+{ VAR "Metaboreflex, Clamp" 0. }
+{ VAR "Lactic Acid Pump, Setting" 0. }
+{ VAR "Lactic Acid Pump, Switch" 0. }
+{ VAR "Blood Lactate, Change" -1.04020030353084e-003 }
+{ VAR "Blood Lactate, Mass" 9.47243430731777 }
+{ VAR "Tissue Solids Density, FatNonLipid" 1.38 }
+{ VAR "Tissue Solids Density, Lipid" 0.905 }
+{ VAR "Tissue Solids Density, Bone" 1.79 }
+{ VAR "Tissue Solids Density, General" 1. }
+{ VAR "Environment H2O, Relative Humidity (%)" 30. }
+{ VAR "Environment, Wind" 0. }
+{ VAR "Environment, Clothes" 2. }
+{ VAR "Environment, Temp (F)" 72. }
+{ VAR "Miscellaneous Stuff, Zero" 0. }
+{ VAR "Dialyzer, Total Dialysate Used" 0. }
+{ VAR "Dialyzer, Total Ultrafiltration" 0. }
+{ VAR "Dialyzer, Bath [Urea]" 0. }
+{ VAR "Dialyzer, Bath [Cl-]" 100. }
+{ VAR "Dialyzer, Bath [K+]" 3. }
+{ VAR "Dialyzer, Bath [Na+]" 140. }
+{ VAR "Dialyzer, Urea Flux" 0. }
+{ VAR "Dialyzer, Cl- Flux" 0. }
+{ VAR "Dialyzer, K+ Flux" 0. }
+{ VAR "Dialyzer, Na+ Flux" 0. }
+{ VAR "Dialyzer, H2O Flux" 0. }
+{ VAR "Dialyzer, Ultrafiltration Spec." 10. }
+{ VAR "Dialyzer, Dialysate Flow" 0. }
+{ VAR "Dialyzer, Dialysate Flow Spec." 500. }
+{ VAR "Dialyzer, Blood Flow" 0. }
+{ VAR "Dialyzer, Blood Flow % Shunt" 20. }
+{ VAR "Dialyzer, Switch" 0. }
+{ VAR "Dialysis Shunt, Basic Conductance" 0. }
+{ VAR "Dialysis Manager, Next Start" 0. }
+{ VAR "Dialysis Manager, End Time" 0. }
+{ VAR "Dialysis Manager, Start Time" 0. }
+{ VAR "Dialysis Manager, Duration" 5. }
+{ VAR "Dialysis Manager, Interval" 3. }
+{ VAR "Dialysis Manager, Dialysis Switch" 0. }
+{ VAR "Dialysis Manager, Dialysis Requested" 0. }
+{ VAR "Daily Planner, Meal Duration" 30. }
+{ VAR "Daily Planner, Exercise Duration" 30. }
+{ VAR "Daily Planner, Exercise Level" 100. }
+{ VAR "Daily Planner, Work Duration" 50. }
+{ VAR "Daily Planner, Work Level" 50. }
+{ VAR "Daily Planner, Is Awake" 1. }
+{ VAR "Daily Planner, Is Sleeping" 0. }
+{ VAR "Daily Planner, Next Hourly Check" 0. }
+{ VAR "Daily Planner, Switch" 0. }
+{ VAR "Daily Planner, 11 PM - 12 AM" 0. }
+{ VAR "Daily Planner, 10 - 11 PM" 0. }
+{ VAR "Daily Planner, 9 - 10 PM" 1. }
+{ VAR "Daily Planner, 8 - 9 PM" 1. }
+{ VAR "Daily Planner, 7 - 8 PM" 1. }
+{ VAR "Daily Planner, 6 - 7 PM" 4. }
+{ VAR "Daily Planner, 5 - 6 PM" 1. }
+{ VAR "Daily Planner, 4 - 5 PM" 2. }
+{ VAR "Daily Planner, 3 - 4 PM" 2. }
+{ VAR "Daily Planner, 2 - 3 PM" 2. }
+{ VAR "Daily Planner, 1 - 2 PM" 2. }
+{ VAR "Daily Planner, 12 - 1 PM" 4. }
+{ VAR "Daily Planner, 11 AM - 12 PM" 2. }
+{ VAR "Daily Planner, 10 - 11 AM" 2. }
+{ VAR "Daily Planner, 9 - 10 AM" 2. }
+{ VAR "Daily Planner, 8 - 9 AM" 2. }
+{ VAR "Daily Planner, 7 - 8 AM" 4. }
+{ VAR "Daily Planner, 6 - 7 AM" 1. }
+{ VAR "Daily Planner, 5 - 6 AM" 0. }
+{ VAR "Daily Planner, 4 - 5 AM" 0. }
+{ VAR "Daily Planner, 3 - 4 AM" 0. }
+{ VAR "Daily Planner, 2 - 3 AM" 0. }
+{ VAR "Daily Planner, 1 - 2 AM" 0. }
+{ VAR "Daily Planner, 12 - 1 AM" 0. }
+{ VAR "Body Size, Gender" 0. }
+{ VAR "Body Size, Lower Torso Fraction" 0.25 }
+{ VAR "Body Size, Middle Torso Fraction" 0.5 }
+{ VAR "Body Size, Upper Torso Fraction" 0.25 }
+{ VAR "Body Size, Height (In)" 70. }
+{ VAR "Whole-Body Function, Failed" 0. }
+{ VAR "Autopsy Report, Tricuspid Regurg" 0. }
+{ VAR "Autopsy Report, Tricuspid Stenosis" 0. }
+{ VAR "Autopsy Report, Pulmonic Regurg" 0. }
+{ VAR "Autopsy Report, Pulmonic Stenosis" 0. }
+{ VAR "Autopsy Report, Mitral Regurg" 0. }
+{ VAR "Autopsy Report, Mitral Stenosis" 0. }
+{ VAR "Autopsy Report, Aortic Regurg" 0. }
+{ VAR "Autopsy Report, Aortic Stenosis" 0. }
+{ VAR "Autopsy Report, Left Heart Hypertrophy" 0. }
+{ VAR "Autopsy Report, Right Heart Hypertrophy" 0. }
+{ VAR "Autopsy Report, Nephron Loss" 0. }
+{ VAR "Autopsy Report, Vena Cava Rupture" 0. }
+{ VAR "Autopsy Report, Aortic Rupture" 0. }
+{ VAR "Autopsy Report, Cardiac Tamponade" 0. }
+{ VAR "Autopsy Report, CO Poisoning" 0. }
+{ VAR "Autopsy Report, Pulm. Edema" 0. }
+{ VAR "Autopsy Report, Pulm. Shunt" 0. }
+{ VAR "Autopsy Report, A-V Fistula" 0. }
+{ VAR "Autopsy Report, Polycythemia" 0. }
+{ VAR "Autopsy Report, Anemia" 0. }
+{ VAR "Autopsy Report, Hemorrhage" 0. }
+{ VAR "Autopsy Report, Ascites" 0. }
+{ VAR "Autopsy Report, Dehydration" 0. }
+{ VAR "Autopsy Report, Edema" 0. }
+{ VAR "Autopsy Report, Right MI" 0. }
+{ VAR "Autopsy Report, Left MI" 0. }
+{ VAR "Autopsy Report, Is Dead" 0. }
+{ VAR "Autopsy Report, Still Alive" 1. }
+{ VAR "Age, Years At Start" 37. }
+{ VAR "Urea, Mass (mG)" 13476.7675241407 }
+{ VAR "Thyroid, Infusion Pump Rate" 0. }
+{ VAR "Thyroid, Infusion Pump Switch" 0. }
+{ VAR "Thyroid, Secretion Rate Basic" 5.e-002 }
+{ VAR "Thyroid, [TSH] Basic" 4. }
+{ VAR "Thyroid, Conc Clamp Level" 0. }
+{ VAR "Thyroid, Conc Clamp Switch" 0. }
+{ VAR "Thyroid, Removal Rate Tau" 17. }
+{ VAR "Thyroid, T4/3 Mass Change" 4.29793649263187e-003 }
+{ VAR "Thyroid, T4/3 Mass" 1206.05893385714 }
+{ VAR "Ketoacid Pump, Setting" 0. }
+{ VAR "Ketoacid Pump, Switch" 0. }
+{ VAR "Glucose Pump, Setting" 0. }
+{ VAR "Glucose Pump, Switch" 0. }
+{ VAR "Triglycerides ECFV, Decomposition K" 7.e-004 }
+{ VAR "Triglycerides ECFV, Mass" 13785.568148115 }
+{ VAR "Ketoacids ECFV, Degradation Rate Const" 3.5e-004 }
+{ VAR "Ketoacids ECFV, Mass" 41.1121267723306 }
+{ VAR "Glucose ECFV, Decomposition K" 7.e-004 }
+{ VAR "Glucose ECFV, Mass" 16157.5330138119 }
+{ VAR "Fatty Acid ECFV, Decomp. Rate Const." 7.e-004 }
+{ VAR "Fatty Acid ECFV, Mass" 1535.68108602428 }
+{ VAR "Amino Acids ECFV, Decomp. Rate Const." 5.e-004 }
+{ VAR "Amino Acids ECFV, Mass" 8168.45172804045 }
+{ VAR "Metabolism, Lactate kCal/G" 3.94 }
+{ VAR "Metabolism, Protein kCal/G" 4.35 }
+{ VAR "Metabolism, Fat kCal/G" 9.3 }
+{ VAR "Metabolism, Carbo's kCal/G Anaerobic" 0.1577 }
+{ VAR "Metabolism, Carbo's kCal/G" 4.1 }
+{ VAR "Metabolism, Watt -> kP-M" 6.12 }
+{ VAR "Metabolism, Watt -> Cal" 14.34 }
+{ VAR "Metabolism, Glu Cal -> CO2 Made" 0.2093 }
+{ VAR "Metabolism, Fat Cal -> CO2 Made" 0.1465 }
+{ VAR "Metabolism, O2 Use -> Ca" 4.77783086478739 }
+{ VAR "Metabolism, Cal -> O2 Use" 0.2093 }
+{ VAR "Metabolic Rate, Normal BMR" 39. }
+{ VAR "Water Manager, Regimen" 1. }
+{ VAR "Water Manager, Daily Goal (L)" 2. }
+{ VAR "Food Manager, Eating Fraction" 6.94444444444444e-004 }
+{ VAR "Food Manager, Can't Eat" 0. }
+{ VAR "Food Manager, Eat Continuously" 1. }
+{ VAR "Food Manager, Is Between Meals" 0. }
+{ VAR "Food Manager, Is Eating" 0. }
+{ VAR "Food Manager, Goal" 0. }
+{ VAR "Diet Goal, SO4-- (mEq/Day)" 50. }
+{ VAR "Diet Goal, PO4-- (mEq/Day)" 30. }
+{ VAR "Diet Goal, K+ (mEq/Day)" 70. }
+{ VAR "Diet Goal, Extra Cl- (mEq/Day)" 20. }
+{ VAR "Diet Goal, Extra Na+ (mEq/Day)" 0. }
+{ VAR "Diet Goal, Table Salt (mMol/Day)" 180. }
+{ VAR "Diet Goal, Protein (kCal/Day)" 500. }
+{ VAR "Diet Goal, Fat (kCal/Day)" 800. }
+{ VAR "Diet Goal, Carbo's (kCal/Day)" 900. }
+{ VAR "Creatinine Kidney, Secretion Block" 0. }
+{ VAR "Creatinine, Mass" 316.95938961632 }
+{ VAR "Creatine, Convert Rate Const" 1.e-002 }
+{ VAR "Creatine, Other Mass" 17. }
+{ VAR "Creatine, Skeletal Muscle Conc" 4. }
+{ VAR "Cell Protein Catabolism, Basic Rate" 1. }
+{ VAR "Cell Protein Anabolism, Basic Rate" 1. }
+{ VAR "Cell Protein, Mass" 6028.93070173949 }
+{ VAR "Carbonic Anhydrase, Inhibition" 0. }
+{ VAR "Lymph H2O Upper Torso, Normal Flow" 0.4 }
+{ VAR "Lymph H2O Middle Torso, Normal Flow" 0.8 }
+{ VAR "Lymph H2O Lower Torso, Normal Flow" 1.3 }
+{ VAR "GI Lumen Vomitus, [Cl-] Target" 80. }
+{ VAR "GI Lumen Vomitus, H2O Target" 0. }
+{ VAR "GI Lumen Heat, Mass" 160.205963017998 }
+{ VAR "GI Lumen Na+, Permeability" 3.e-003 }
+{ VAR "GI Lumen Na+, Change" 0. }
+{ VAR "GI Lumen Na+, Mass" 41.6666666666667 }
+{ VAR "GI Lumen Protein, Permeability" 5.e-002 }
+{ VAR "GI Lumen Protein, Change" 0. }
+{ VAR "GI Lumen Protein, Mass" 1596.42401021711 }
+{ VAR "GI Lumen K+, Permeability" 4.e-003 }
+{ VAR "GI Lumen K+, Change" 0. }
+{ VAR "GI Lumen K+, Mass" 12.1527777777778 }
+{ VAR "GI Lumen H2O, Fiber" 40. }
+{ VAR "GI Lumen H2O, Permeability" 150. }
+{ VAR "GI Lumen H2O, Mass" 519.574650832183 }
+{ VAR "GI Lumen Diarrhea, [Na+] Target" 60. }
+{ VAR "GI Lumen Diarrhea, H2O Target" 0. }
+{ VAR "GI Lumen Fat, Permeability" 3.e-002 }
+{ VAR "GI Lumen Fat, Change" 0. }
+{ VAR "GI Lumen Fat, Mass" 1991.23855037834 }
+{ VAR "GI Lumen Cl-, Permeability" 3.e-003 }
+{ VAR "GI Lumen Cl-, Change" -5.47680659432341e-016 }
+{ VAR "GI Lumen Cl-, Mass" 46.2962962962963 }
+{ VAR "GI Lumen Carbo's, Transporter" 1. }
+{ VAR "GI Lumen Carbo's, Mass" 1930.10098048224 }
+{ VAR "Liver Structure, Change" 0. }
+{ VAR "Liver Structure, Effect" 1. }
+{ VAR "Liver Cals Used, Normal" 190. }
+{ VAR "Liver O2, Imp. Low Limit" 0. }
+{ VAR "Liver O2, pO2" 33.3185019830983 }
+{ VAR "Liver Lactate, Has Substrate" 1. }
+{ VAR "Liver Lactate, Inhibition K" 2.e-002 }
+{ VAR "Liver Lactate, Metabolism K" 2. }
+{ VAR "Liver Lactate, Formation K" 2.e-003 }
+{ VAR "Liver Lactate, Diffusion Coef." 0.12 }
+{ VAR "Liver Lactate, Change" 4.64926704542417e-004 }
+{ VAR "Liver Lactate, Mass (mEq/kG)" 0.667215938430236 }
+{ VAR "Liver Function, Failed" 0. }
+{ VAR "Liver Fuel, Use Rate Constant" 0.5 }
+{ VAR "Liver Fuel, Use Change" -1.71150206072607e-017 }
+{ VAR "Liver Fuel, Fractional Use" 1. }
+{ VAR "Liver Composition, Solid Mass" 500. }
+{ VAR "Liver CO2, Diffusion Coefficient" 1.4 }
+{ VAR "Liver HCO3-, Change" 5.09197401126526e-004 }
+{ VAR "Liver HCO3-, Mass" 57.8783826383525 }
+{ VAR "Liver pH, Basic SID" 9.e-002 }
+{ VAR "Hepatic Artery, Basic Conductance" 2.8 }
+{ VAR "Peritoneal Cavity, External Pressure" 9. }
+{ VAR "Peritoneal Cavity, Compliance" 760. }
+{ VAR "Peritoneal Cavity, Outflow Perm" 1.5 }
+{ VAR "Peritoneal Cavity, Inflow Perm" 0.9 }
+{ VAR "Peritoneal Cavity, Volume" 0. }
+{ VAR "Left Heart Vascularity, Time Delay" 30. }
+{ VAR "Left Heart Vascularity, Change" 2.76774806382831e-006 }
+{ VAR "Left Heart Vascularity, Vessels" 1.03027928895331 }
+{ VAR "Left Heart Structure, Change" 0. }
+{ VAR "Left Heart Structure, Effect" 1. }
+{ VAR "Left Heart Pumping, Stiffness" 1.5e-002 }
+{ VAR "Left Heart Cals Used, Normal" 20. }
+{ VAR "Left Heart Lactate, Has Substrate" 1. }
+{ VAR "Left Heart Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Left Heart Lactate, Metabolism K" 1. }
+{ VAR "Left Heart Lactate, Formation K" 5.e-003 }
+{ VAR "Left Heart Lactate, Diffusion Coef." 1.e-003 }
+{ VAR "Left Heart Lactate, Change" -1.21125181766664e-005 }
+{ VAR "Left Heart Lactate, Mass (mEq/kG)" 2.081596952047 }
+{ VAR "Left Heart Function, Failed" 0. }
+{ VAR "Left Heart Fuel, Use Rate Constant" 0.5 }
+{ VAR "Left Heart Fuel, Use Change" 0. }
+{ VAR "Left Heart Fuel, Fractional Use" 1. }
+{ VAR "Left Heart Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Left Heart Perfusion, pO2" 15.4295688349044 }
+{ VAR "Left Heart Perfusion, Basic Conduct." 2.2 }
+{ VAR "Left Heart Perfusion, Large Vessel Base" 50. }
+{ VAR "Left Heart Infarct, Is Ischemic" 0. }
+{ VAR "Left Heart Infarct, Dead Tissue Change" 0. }
+{ VAR "Left Heart Infarct, Dead Tissue Fraction" 0. }
+{ VAR "Left Heart Infarct, Dead Tissue 1/Tau" 4.e-003 }
+{ VAR "Left Heart Infarct, Area (%)" 0. }
+{ VAR "Left Heart Muscle Protein, Synthesis Tau" 10. }
+{ VAR "Left Heart Muscle Protein, Total Mass" 67.993226228354 }
+{ VAR "Left Heart Assist, Setting" 0. }
+{ VAR "Left Heart Assist, Switch" 0. }
+{ VAR "Left Heart Assist, Contractility" 0. }
+{ VAR "Left Heart Contractility, Basic (%)" 100. }
+{ VAR "Left Heart Composition, Other Solids" 27. }
+{ VAR "Left Heart CO2, Diffusion Coefficient" 1. }
+{ VAR "Left Heart HCO3-, Change" 9.72271955959007e-005 }
+{ VAR "Left Heart HCO3-, Mass" 11.7111523331225 }
+{ VAR "Left Heart B-Receptors, Level" 0. }
+{ VAR "Left Heart B-Receptors, Clamp" 0. }
+{ VAR "Left Heart a-Receptors, Level" 0. }
+{ VAR "Left Heart a-Receptors, Clamp" 0. }
+{ VAR "Left Heart Perfusion, Pump Setting" 0. }
+{ VAR "Left Heart Perfusion, Pump Switch" 0. }
+{ VAR "Left Heart pH, Basic SID" 9.e-002 }
+{ VAR "Kidney Structure, Change" 0. }
+{ VAR "Kidney Structure, Effect" 1. }
+{ VAR "Kidney O2, Basic O2 Perm" 0.9 }
+{ VAR "Kidney O2, Imp. Low Limit" 0. }
+{ VAR "Kidney O2, Tubule pO2" 23.498127504175 }
+{ VAR "Kidney Myogenic, Adaptation Tau" 4. }
+{ VAR "Kidney Myogenic, Adaptation Change" -1.37503096952492e-003 }
+{ VAR "Kidney Myogenic, Adapted Pressure" 78.0340054922829 }
+{ VAR "Kidney Cals Used, Normal" 43. }
+{ VAR "Kidney Lactate, Has Substrate" 1. }
+{ VAR "Kidney Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Kidney Lactate, Metabolism K" 1. }
+{ VAR "Kidney Lactate, Formation K" 5.e-003 }
+{ VAR "Kidney Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Kidney Lactate, Change" -7.85089716729746e-005 }
+{ VAR "Kidney Lactate, Mass (mEq/kG)" 2.03034293140324 }
+{ VAR "Kidney Function, Failed" 0. }
+{ VAR "Kidney Fuel, Use Rate Constant" 0.5 }
+{ VAR "Kidney Fuel, Use Change" 1.71150206072607e-017 }
+{ VAR "Kidney Fuel, Fractional Use" 1. }
+{ VAR "Arcuate Artery, Stenosis" 1. }
+{ VAR "Arcuate Artery, Basic Conductance" 600. }
+{ VAR "Efferent Artery, Basic Conductance" 22.6 }
+{ VAR "Efferent Artery, Level" 0. }
+{ VAR "Efferent Artery, Clamp" 0. }
+{ VAR "Efferent Artery, Conductance" 22.6553868440044 }
+{ VAR "Kidney Composition, Filtering %" 100. }
+{ VAR "Kidney Composition, Nephrons x Norm" 1. }
+{ VAR "Kidney Composition, Nephron Number" 2400000. }
+{ VAR "Kidney Composition, Solid Mass" 110. }
+{ VAR "Kidney CO2, Diffusion Coefficient" 0.8 }
+{ VAR "Kidney HCO3-, Change" 1.91691758037012e-004 }
+{ VAR "Kidney HCO3-, Mass" 12.246765617124 }
+{ VAR "Kidney B-Receptors, Level" 0. }
+{ VAR "Kidney B-Receptors, Clamp" 0. }
+{ VAR "Kidney Perfusion, Pump Setting" 0. }
+{ VAR "Kidney Perfusion, Pump Switch" 0. }
+{ VAR "Kidney a-Receptors Proximal Tubule, Level" 0. }
+{ VAR "Kidney a-Receptors Proximal Tubule, Clamp" 0. }
+{ VAR "Kidney a-Receptors Efferent, Level" 0. }
+{ VAR "Kidney a-Receptors Efferent, Clamp" 0. }
+{ VAR "Kidney a-Receptors Afferent, Level" 0. }
+{ VAR "Kidney a-Receptors Afferent, Clamp" 0. }
+{ VAR "Kidney a-Receptors, Level" 0. }
+{ VAR "Kidney a-Receptors, Clamp" 0. }
+{ VAR "Afferent Artery, Myogenic Level" 1. }
+{ VAR "Afferent Artery, Myogenic Clamp" 0. }
+{ VAR "Afferent Artery, Basic Conductance" 34.3 }
+{ VAR "Afferent Artery, Level" 0. }
+{ VAR "Afferent Artery, Clamp" 0. }
+{ VAR "Afferent Artery, Conductance" 32.717906635229 }
+{ VAR "Kidney pH, Basic SID" 9.e-002 }
+{ VAR "SO4-- ECFV, Mass" 4.08413981905997 }
+{ VAR "PO4-- ECFV, Mass" 2.45048389143598 }
+{ VAR "Sodium ECFV, Mass" 2146.13442470192 }
+{ VAR "Chloride ECFV, Mass" 1347.38517863275 }
+{ VAR "Infusion, Protein Rate" 0. }
+{ VAR "Infusion, [Protein]" 0. }
+{ VAR "Infusion, NaCl Rate" 0. }
+{ VAR "Infusion, [NaCl]" 0. }
+{ VAR "Infusion, KCl Rate" 0. }
+{ VAR "Infusion, [KCl]" 0. }
+{ VAR "Infusion, Cumulative Volume" 0. }
+{ VAR "Infusion, Rate" 0. }
+{ VAR "Infusion, Duration" 10. }
+{ VAR "Infusion, Final Volume" 1000. }
+{ VAR "Infusion, End Time" 0. }
+{ VAR "Infusion, Start Time" 0. }
+{ VAR "Infusion, Switch" 0. }
+{ VAR "Infusion, NaHCO3 Rate" 0. }
+{ VAR "Infusion, [NaHCO3]" 0. }
+{ VAR "Infusion, NH4Cl Rate" 0. }
+{ VAR "Infusion, [NH4Cl]" 0. }
+{ VAR "IFV Protein Upper Torso, Decomp Rate Const" 2.1e-005 }
+{ VAR "IFV Protein Upper Torso, Mass" 68.8114004595964 }
+{ VAR "IFV Protein Middle Torso, Decomp Rate Const" 2.1e-005 }
+{ VAR "IFV Protein Middle Torso, Mass" 137.622800919193 }
+{ VAR "IFV Protein Lower Torso, Decomp Rate Const" 2.1e-005 }
+{ VAR "IFV Protein Lower Torso, Mass" 75.7757801096464 }
+{ VAR "IFV H2O Upper Torso, Normal Volume" 3. }
+{ VAR "IFV H2O Middle Torso, Normal Volume" 6. }
+{ VAR "IFV H2O Lower Torso, Normal Volume" 3. }
+{ VAR "Heart V-Fib, Elapsed Time" 1.e+308 }
+{ VAR "Heart V-Fib, Is Arrested" 0. }
+{ VAR "Heart V-Fib, Is Fibrillating" 0. }
+{ VAR "Heart Ventricles, Intrinsic Rate" 45. }
+{ VAR "Heart, Pain" 0. }
+{ VAR "Heart Pacemaker, Setting" 0. }
+{ VAR "Heart Pacemaker, Switch" 0. }
+{ VAR "Heart Defibrillator, Probability" 1.e+308 }
+{ VAR "Heart Defibrillator, Total Shocks" 0. }
+{ VAR "Heart Defibrillator, Joules" 100. }
+{ VAR "Heart CPR, Tidal Volume" 200. }
+{ VAR "Heart CPR, Ventilation Rate" 10. }
+{ VAR "Heart CPR, Elapsed Time" 1.e+308 }
+{ VAR "Heart CPR, Force" 300. }
+{ VAR "Heart CPR, Rate" 100. }
+{ VAR "Heart CPR, Activate On V-Fib" 1. }
+{ VAR "Heart CPR, Activate On Asystole" 1. }
+{ VAR "Heart CPR, Is Active" 0. }
+{ VAR "Heart CPR, Switch" 0. }
+{ VAR "S-A Node Beta Receptors, Level" 0. }
+{ VAR "S-A Node Beta Receptors, Clamp" 0. }
+{ VAR "Heart Atria, A-V Conduction" 1. }
+{ VAR "Heart Atria, Basal Rate" 82. }
+{ VAR "ECG, State" 3. }
+{ VAR "K+ Membrane, Delay Tau" 2. }
+{ VAR "K+ Membrane, Delay Change" 3.76639979094246e-007 }
+{ VAR "K+ Membrane, Delayed Aldo Effect" 0.99843439434432 }
+{ VAR "K+ Membrane, Outward Rate Constant" 7.4e-005 }
+{ VAR "K+ Membrane, Basic Inward K" 2.e-003 }
+{ VAR "K+ ECFV, Mass" 64.0455974499224 }
+{ VAR "K+ Cell, Mass" 3944.43506208301 }
+{ VAR "Zona Glomerulosa, Tumor Secretion" 0. }
+{ VAR "Zona Glomerulosa, Basic Secretion" 330. }
+{ VAR "Aldosterone Kidney, Level" 0. }
+{ VAR "Aldosterone Kidney, Clamp" 0. }
+{ VAR "Aldosterone Kidney, Delay Tau" 4. }
+{ VAR "Aldosterone Kidney, Change" 2.20999491177111e-005 }
+{ VAR "Aldosterone Kidney, Conc Delayed" 10.5503455366362 }
+{ VAR "Aldosterone Pump, Setting" 0. }
+{ VAR "Aldosterone Pump, Switch" 0. }
+{ VAR "Aldosterone Pool, Decomposition K" 7.e-004 }
+{ VAR "Aldosterone Pool, Extraction" 1. }
+{ VAR "Aldosterone Pool, Mass" 12389.7886012513 }
+{ VAR "Insulin Pump, Setting" 0. }
+{ VAR "Insulin Pump, Switch" 0. }
+{ VAR "Insulin ECFV, Degradation Rate Const" 5.7e-002 }
+{ VAR "Insulin ECFV, Change" -0.147249254005498 }
+{ VAR "Insulin ECFV, Mass" 275.910504070654 }
+{ VAR "Glucagon ECFV, Degradation Rate Const" 5.e-002 }
+{ VAR "Glucagon ECFV, Change" -0.467310049650485 }
+{ VAR "Glucagon ECFV, Mass" 1011.65470283736 }
+{ VAR "Insulin Synthesis Rate, Delay - Tau" 40. }
+{ VAR "Insulin Synthesis Rate, Delay - Change" 1.06379474921897e-003 }
+{ VAR "Insulin Synthesis Rate, Rate" 15.7831322807555 }
+{ VAR "Insulin Secretion, Clamp Level" 0. }
+{ VAR "Insulin Secretion, Clamp Switch" 0. }
+{ VAR "Insulin Secretion, Basic Fraction" 8.5e-003 }
+{ VAR "Insulin Beta-Cell, Change" 0.148161646339462 }
+{ VAR "Insulin Beta-Cell, Mass" 2030.88950843649 }
+{ VAR "Glucagon Secretion, Clamp Level" 0. }
+{ VAR "Glucagon Secretion, Clamp Switch" 0. }
+{ VAR "Glucagon Secretion, Basic Rate" 50. }
+{ VAR "Insulin Inject, Total Injections" 0. }
+{ VAR "Insulin Inject, Amount Injected" 0. }
+{ VAR "Insulin Inject, Degrade Rate Const" 4.e-003 }
+{ VAR "Insulin Inject, Absorb Tau" 4. }
+{ VAR "Insulin Inject, Change" 0. }
+{ VAR "Insulin Inject, Accumulated Mass" 0. }
+{ VAR "Hgb, P50 Basic" 26.6 }
+{ VAR "Hgb, CO Sensitivity" 1. }
+{ VAR "Hgb, pCO2 Sensitivity" 1. }
+{ VAR "Hgb, pH Sensitivity" 1. }
+{ VAR "Hgb, Temperature Sensitivity" 1. }
+{ VAR "Hgb, [Basic]" 0.15 }
+{ VAR "Hgb, [Level]" 0. }
+{ VAR "Hgb, Clamp" 0. }
+{ VAR "Liver Glucose -> FA, Basic Uptake" 75. }
+{ VAR "Liver AA -> Fatty Acid, Basic Uptake" 34. }
+{ VAR "Liver Gluconeogenesis, AA Uptake Basic" 42. }
+{ VAR "Liver KA, Synthesis Basic" 2.2 }
+{ VAR "Liver Glycogenesis, Basic" 75. }
+{ VAR "Liver Glycogenolysis, Basic" 75. }
+{ VAR "Liver Glycogen, Insulin Delayed K" 2.e-002 }
+{ VAR "Liver Glycogen, Insulin Delayed" 34.9860054561021 }
+{ VAR "Liver Glycogen, Mass" 99.8743475799973 }
+{ VAR "Heat, Vaporization (kCal/G)" 0.58 }
+{ VAR "Heat, Vaporization (Cal/G)" 580. }
+{ VAR "Specific Heat, Air (kCal)" 2.23e-007 }
+{ VAR "Specific Heat, Air" 2.23e-004 }
+{ VAR "Specific Heat, Blood (kCal)" 9.2e-004 }
+{ VAR "Specific Heat, Blood" 0.92 }
+{ VAR "Specific Heat, Water (kCal)" 1.e-003 }
+{ VAR "Specific Heat, Water" 1. }
+{ VAR "Skin Temperature, Heat Change" -0.284808635969752 }
+{ VAR "Skin Temperature, Heat" 990.328870359057 }
+{ VAR "Skin H2O Loss, Basic Loss" 0.45 }
+{ VAR "Core Heat, Heat" 11665.4484159684 }
+{ VAR "CNS Sweat Acclimate, Delay Tau" 7. }
+{ VAR "CNS Sweat Acclimate, Offset" 9.40775098513649e-003 }
+{ VAR "CNS Shiver Acclimate, Delay Tau" 7. }
+{ VAR "CNS Shiver Acclimate, Offset" 9.40775098513649e-003 }
+{ VAR "CNS Thyroid, Setpoint" 37. }
+{ VAR "CNS Sweating, Setpoint" 37. }
+{ VAR "CNS Shivering, Setpoint" 37. }
+{ VAR "CNS Skin Flow, Setpoint" 37. }
+{ VAR "Sweat Precursor, Clamp Level" 0. }
+{ VAR "Sweat Precursor, Clamp Switch" 0. }
+{ VAR "Sweat Precursor, Basic Rate" 1. }
+{ VAR "Sweat Fuel, Refill K" 4.e-003 }
+{ VAR "Sweat Fuel, Use K" 4.e-004 }
+{ VAR "Sweat Fuel, Mass" 1. }
+{ VAR "Sweat Reabsorption, Reab Base" 0.8 }
+{ VAR "Sweat Acclimation, Basic Effect" 1. }
+{ VAR "Sweat Acclimation, Delay Tau" 6. }
+{ VAR "Sweat Acclimation, Effect" 1.0706950360633 }
+{ VAR "Plasma Protein, Basic Degradation" 5.e-003 }
+{ VAR "Plasma Protein, Basic Synthesis" 1.e-002 }
+{ VAR "Plasma Protein, Mass" 213.753145878977 }
+{ VAR "Peritoneal Protein, Mass" 0. }
+{ VAR "Osmoles - ECFV, Other Cations" 74.5 }
+{ VAR "Osmoles - Cell, Other Cations" 380. }
+{ VAR "Osmoles - Body, Solute Clumping" 0.934 }
+{ VAR "H2O Upper Torso, Volume" 9450.7563790698 }
+{ VAR "H2O Middle Torso, Volume" 18901.5127581396 }
+{ VAR "H2O Lower Torso, Volume" 9677.17347349746 }
+{ VAR "GI Tract Vascularity, Time Delay" 30. }
+{ VAR "GI Tract Vascularity, Change" 3.7208035433512e-006 }
+{ VAR "GI Tract Vascularity, Vessels" 1.03892942049359 }
+{ VAR "GI Tract Structure, Change" 0. }
+{ VAR "GI Tract Structure, Effect" 1. }
+{ VAR "GI Tract Cals Used, Normal" 120. }
+{ VAR "GI Tract Lactate, Has Substrate" 1. }
+{ VAR "GI Tract Lactate, Inhibition K" 1.5e-003 }
+{ VAR "GI Tract Lactate, Metabolism K" 1. }
+{ VAR "GI Tract Lactate, Formation K" 5.e-003 }
+{ VAR "GI Tract Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "GI Tract Lactate, Change" -1.5687945931532e-005 }
+{ VAR "GI Tract Lactate, Mass (mEq/kG)" 1.88673228228886 }
+{ VAR "GI Tract Function, Failed" 0. }
+{ VAR "GI Tract Fuel, Use Rate Constant" 0.5 }
+{ VAR "GI Tract Fuel, Change" 0. }
+{ VAR "GI Tract Fuel, Fractional Use" 1. }
+{ VAR "GI Tract Perfusion, Imp. Lower Limit" 0. }
+{ VAR "GI Tract Perfusion, pO2" 42.8464876984973 }
+{ VAR "GI Tract Perfusion, Basic Conduct." 11.2 }
+{ VAR "GI Tract Composition, Solid Mass" 900. }
+{ VAR "GI Tract CO2, Diffusion Coefficient" 0.9 }
+{ VAR "GI Tract HCO3-, Change" 1.4192839007882e-003 }
+{ VAR "GI Tract HCO3-, Mass" 100.982186432516 }
+{ VAR "GI Tract a-Receptors, Level" 0. }
+{ VAR "GI Tract a-Receptors, Clamp" 0. }
+{ VAR "GI Tract pH, Basic SID" 9.e-002 }
+{ VAR "Fat Vascularity, Time Delay" 30. }
+{ VAR "Fat Vascularity, Change" 3.69399020692508e-006 }
+{ VAR "Fat Vascularity, Vessels" 1.04044358416344 }
+{ VAR "Fat Structure, Change" 0. }
+{ VAR "Fat Structure, Effect" 1. }
+{ VAR "Fat Cals Used, Basal" 25. }
+{ VAR "Fat Lipids Release, Basic" 90. }
+{ VAR "Fat Lipids Uptake, Basic" 100. }
+{ VAR "Fat Lipids, Mass" 10029.2135566804 }
+{ VAR "Fat Lactate, Has Substrate" 1. }
+{ VAR "Fat Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Fat Lactate, Metabolism K" 1. }
+{ VAR "Fat Lactate, Formation K" 5.e-003 }
+{ VAR "Fat Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Fat Lactate, Change" 7.10347832736727e-006 }
+{ VAR "Fat Lactate, Mass (mEq/kG)" 1.77255979677276 }
+{ VAR "Fat Function, Failed" 0. }
+{ VAR "Fat Fuel, Use Rate Constant" 0.5 }
+{ VAR "Fat Fuel, Change" 0. }
+{ VAR "Fat Fuel, Fractional Use" 1. }
+{ VAR "Fat Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Fat Perfusion, pO2" 42.3117703817031 }
+{ VAR "Fat Perfusion, Basic Conduct." 2.7 }
+{ VAR "Fat Composition, Other Solids" 1300. }
+{ VAR "Fat CO2, Diffusion Coefficient" 0.2 }
+{ VAR "Fat HCO3-, Change" 7.22266533738298e-003 }
+{ VAR "Fat HCO3-, Mass" 609.218941400831 }
+{ VAR "Fat Perfusion, Pump Setting" 0. }
+{ VAR "Fat Perfusion, Pump Switch" 0. }
+{ VAR "Fat a-Receptors, Level" 0. }
+{ VAR "Fat a-Receptors, Clamp" 0. }
+{ VAR "Fat pH, Basic SID" 9.e-002 }
+{ VAR "Exercise -> Vent, Sensitivity" 1. }
+{ VAR "Exercise -> Vent, Delayed Tau" 0.5 }
+{ VAR "Exercise -> Vent, Delayed Change" 0. }
+{ VAR "Exercise -> Vent, Delayed Term" 0. }
+{ VAR "Exercise -> Vent, Fraction Delayed" 0.5 }
+{ VAR "Exercise -> Symp's, Sensitivity" 1. }
+{ VAR "Exercise -> Symp's, Delayed Tau" 0.2 }
+{ VAR "Exercise -> Symp's, Delayed Change" 0. }
+{ VAR "Exercise -> Symp's, Delayed Term" 0. }
+{ VAR "Exercise -> Symp's, Fraction Delayed" 0.8 }
+{ VAR "Venous Pump, Exer. Delayed Tau" 0.4 }
+{ VAR "Venous Pump, Exer. Delayed Change" 0. }
+{ VAR "Venous Pump, Exercise Delayed" 0. }
+{ VAR "Venous Pump, Fraction Delayed" 0.5 }
+{ VAR "Treadmill, Backpack Weight (Lbs)" 0. }
+{ VAR "Treadmill, Total Distance Change" 0. }
+{ VAR "Treadmill, Total Distance (Feet)" 0. }
+{ VAR "Treadmill, Elapsed Time" 0. }
+{ VAR "Treadmill, Grade (%)" 0. }
+{ VAR "Treadmill, Speed (MPH)" 0. }
+{ VAR "Treadmill, Run Or Walk" 0. }
+{ VAR "Exercise, Motivation" 4.e-002 }
+{ VAR "Exercise, Efficiency (%)" 30. }
+{ VAR "Exercise, Using Daily Planner" 0. }
+{ VAR "Exercise, Is On Treadmill" 0. }
+{ VAR "Exercise, Is On Bike" 0. }
+{ VAR "Exercise, Is In Aerobics" 0. }
+{ VAR "Exercise, Is Working" 0. }
+{ VAR "Exercise, Is Resting" 1. }
+{ VAR "Exercise, Last Goal" 0. }
+{ VAR "Exercise, Goal" 0. }
+{ VAR "Exercise Bike, Elapsed Time" 0. }
+{ VAR "Exercise Bike, RPM" 50. }
+{ VAR "Exercise Bike, Power (W)" 0. }
+{ VAR "Chlorothiazide GI Lumen, Permeability" 1.e-002 }
+{ VAR "Chlorothiazide GI Lumen, Mass" 0. }
+{ VAR "Chlorothiazide ECFV, Mass" 0. }
+{ VAR "Chlorothiazide Dose, Times A Day" 1. }
+{ VAR "Chlorothiazide Dose, Repeated Dose" 0. }
+{ VAR "Chlorothiazide Dose, Take Daily" 0. }
+{ VAR "Chlorothiazide Dose, Single Dose" 0. }
+{ VAR "Midodrine ECFV, Volume Distribution" 90. }
+{ VAR "Midodrine ECFV, To Desgly Rate Constant" 2.e-002 }
+{ VAR "Midodrine ECFV, Mass" 0. }
+{ VAR "Midodrine GI Lumen, Permeability" 6.e-002 }
+{ VAR "Midodrine GI Lumen, Mass" 0. }
+{ VAR "Midodrine Dose, Times A Day" 1. }
+{ VAR "Midodrine Dose, Repeated Dose" 0. }
+{ VAR "Midodrine Dose, Take Daily" 0. }
+{ VAR "Midodrine Dose, Single Dose" 0. }
+{ VAR "Midodrine Desgly, Volume Distribution" 180. }
+{ VAR "Midodrine Desgly, Loss Rate Constant" 4.5e-003 }
+{ VAR "Midodrine Desgly, Mass" 0. }
+{ VAR "Furosemide ECFV, Mass" 0. }
+{ VAR "Furosemide Dose, Cumulative Dose" 0. }
+{ VAR "Furosemide Dose, Total Number Of Doses" 0. }
+{ VAR "Furosemide Dose, Time Last Dose" 1.e+308 }
+{ VAR "Furosemide Dose, Dose" 0. }
+{ VAR "Furosemide Injection, Timespan" 15. }
+{ VAR "Furosemide Injection, Mass" 0. }
+{ VAR "Digoxin GI Lumen, Permeability" 7.e-003 }
+{ VAR "Digoxin GI Lumen, Mass" 0. }
+{ VAR "Digoxin ECFV, Nauseated" 0. }
+{ VAR "Digoxin ECFV, Volume Distribution" 700. }
+{ VAR "Digoxin ECFV, Mass" 0. }
+{ VAR "Digoxin Dose, Times A Day" 1. }
+{ VAR "Digoxin Dose, Repeated Dose" 0. }
+{ VAR "Digoxin Dose, Take Daily" 0. }
+{ VAR "Digoxin Dose, Single Dose" 0. }
+{ VAR "CO2 Systemic Veins, Blood Volume" 3860. }
+{ VAR "CO2 Systemic Veins, Change" 3.33352678439804e-003 }
+{ VAR "CO2 Systemic Veins, Mass" 182.832033001173 }
+{ VAR "CO2 Miscellaneous, Liters To Mols" 4.46e-002 }
+{ VAR "CO2 Miscellaneous, Mols To Liters" 22.4 }
+{ VAR "CO2 Lungs, Expired" 162.616743122932 }
+{ VAR "CO2 Systemic Arteries, Blood Volume" 1340. }
+{ VAR "CO2 Systemic Arteries, Change" 5.57930338179191e-003 }
+{ VAR "CO2 Systemic Arteries, Mass" 61.8286666284023 }
+{ VAR "Pericardium, Drain Conductance" 0. }
+{ VAR "Pericardium, Drain Switch" 0. }
+{ VAR "Pericardium, Hemorrhage Conductance" 0. }
+{ VAR "Pericardium, Hemorrhage Switch" 0. }
+{ VAR "Pericardium, Fluid Volume" 0. }
+{ VAR "Pericardium, V0 Rate Constant" 3.5e-003 }
+{ VAR "Pericardium, Unstressed Volume" 512.54038758471 }
+{ VAR "Pericardium, Stiffness" 1.5e-002 }
+{ VAR "Pericardium, Intact" 1. }
+{ VAR "Pericardium, Pressure" -1.44747268601209 }
+{ VAR "Venous Gas Sample, [HCO3-]" 1.e+305 }
+{ VAR "Venous Gas Sample, [H+]" 1.e+305 }
+{ VAR "Venous Gas Sample, pH" 1.e+305 }
+{ VAR "Venous Gas Sample, pCO2" 1.e+305 }
+{ VAR "Venous Gas Sample, Saturation" 1.e+305 }
+{ VAR "Venous Gas Sample, Content" 1.e+305 }
+{ VAR "Venous Gas Sample, pO2" 1.e+305 }
+{ VAR "Venous Gas Sample, Last Sample" 1.e+305 }
+{ VAR "A-V Fistula, Basic Conductance" 0. }
+{ VAR "Arterial O2, Imp. Lower Limit" 0. }
+{ VAR "Arterial O2, [O2]" 0.183985080158345 }
+{ VAR "Arterial Blood Sample, [HCO3-]" 1.e+305 }
+{ VAR "Arterial Blood Sample, [H+]" 1.e+305 }
+{ VAR "Arterial Blood Sample, pH" 1.e+305 }
+{ VAR "Arterial Blood Sample, pCO2" 1.e+305 }
+{ VAR "Arterial Blood Sample, O2 Saturation" 1.e+305 }
+{ VAR "Arterial Blood Sample, O2 Content" 1.e+305 }
+{ VAR "Arterial Blood Sample, pO2" 1.e+305 }
+{ VAR "Arterial Blood Sample, Last Sample" 1.e+305 }
+{ VAR "Systemic Arteries, Unstressed Volume" 850. }
+{ VAR "Systemic Arteries, Compliance" 1.67 }
+{ VAR "Splanchnic Veins, Basic Conductance" 160. }
+{ VAR "Splanchnic Veins, Basic V0" 500. }
+{ VAR "Splanchnic Veins, Compliance" 69. }
+{ VAR "Splanchnic Arteries, Pump Setting" 0. }
+{ VAR "Splanchnic Arteries, Pump Switch" 0. }
+{ VAR "Splanchnic Arteries, Conductance" 13.6596228301085 }
+{ VAR "Pulmonary Veins, Basic Conductance" 2700. }
+{ VAR "Pulmonary Veins, Unstressed Volume" 150. }
+{ VAR "Pulmonary Veins, Compliance" 6.5 }
+{ VAR "Pulmonary Veins, Pressure" 6.95650753116646 }
+{ VAR "Pulmonary Capillaries, Basic Conductance" 1800. }
+{ VAR "Pulmonary Capillaries, Unstressed Volume" 140. }
+{ VAR "Pulmonary Capillaries, Compliance" 4.6 }
+{ VAR "Pulmonary Artery, Basic Conductance" 1350. }
+{ VAR "Pulmonary Artery, Unstressed Volume" 110. }
+{ VAR "Pulmonary Artery, Compliance" 5.4 }
+{ VAR "Peripheral Veins, Basic Conductance" 590. }
+{ VAR "Peripheral Veins, Basic V0" 1825. }
+{ VAR "Peripheral Veins, Compliance" 70. }
+{ VAR "Peripheral Arteries, Conductance" 54.479169296466 }
+{ VAR "Blood Viscosity, Fixed Value" 1. }
+{ VAR "Blood Viscosity, Switch" 0. }
+{ VAR "Peripheral Vein a-Receptors, Level" 0. }
+{ VAR "Peripheral Vein a-Receptors, Clamp" 0. }
+{ VAR "Carotid Sinus, Pump Setting" 0. }
+{ VAR "Carotid Sinus, Pump Switch" 0. }
+{ VAR "Cardiac Output, Imp. Upper Limit" 29582.5703341495 }
+{ VAR "Cardiac Output, Imp. Lower Limit" 0. }
+{ VAR "Cardiac Output, Flow" 6041.96901197992 }
+{ VAR "Capillary Protein Upper Torso, Perm" 0.22 }
+{ VAR "Capillary Protein Middle Torso, Perm" 0.44 }
+{ VAR "Capillary Protein Lower Torso, Perm" 0.71 }
+{ VAR "Capillary H2O Upper Torso, Permeability" 0.22 }
+{ VAR "Capillary H2O Middle Torso, Permeability" 0.44 }
+{ VAR "Capillary H2O Lower Torso, Permeability" 0.27 }
+{ VAR "Brain Vascularity, Time Delay" 30. }
+{ VAR "Brain Vascularity, Change" -3.19665740730268e-006 }
+{ VAR "Brain Vascularity, Vessels" 0.963509585380469 }
+{ VAR "Brain Structure, Change" 0. }
+{ VAR "Brain Structure, Effect" 1. }
+{ VAR "Brain Cals Used, Normal" 240. }
+{ VAR "Brain Lactate, Has Substrate" 1. }
+{ VAR "Brain Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Brain Lactate, Metabolism K" 1. }
+{ VAR "Brain Lactate, Formation K" 5.e-003 }
+{ VAR "Brain Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Brain Lactate, Change" -6.06483030522506e-005 }
+{ VAR "Brain Lactate, Mass (mEq/kG)" 1.99374902166069 }
+{ VAR "Brain Function, Was Comatose" 0. }
+{ VAR "Brain Function, pO2 Effect K" 4. }
+{ VAR "Brain Function, pO2 Effect Change" 0. }
+{ VAR "Brain Function, pO2 Effect Delayed" 1. }
+{ VAR "Brain Function, Last Effect" 1. }
+{ VAR "Brain Function, Effect" 1. }
+{ VAR "Brain Function, Really Dead" 0. }
+{ VAR "Brain Function, May Be Dead" 0. }
+{ VAR "Brain Function, Not Breathing" 0. }
+{ VAR "Brain Function, Convulsing" 0. }
+{ VAR "Brain Function, Comatose" 0. }
+{ VAR "Brain Function, Impaired" 0. }
+{ VAR "Brain Function, Confused" 0. }
+{ VAR "Brain Function, Normal Function" 1. }
+{ VAR "Brain Fuel, Use Rate Constant" 0.5 }
+{ VAR "Brain Fuel, Change" 0. }
+{ VAR "Brain Fuel, Fractional Use" 1. }
+{ VAR "Brain Perfusion, Max Tens -> Conduct." 2.2 }
+{ VAR "Brain Perfusion, Lose pCO2 Tens At" 75. }
+{ VAR "Brain Perfusion, Lose pO2 Tens At" 22. }
+{ VAR "Brain Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Brain Perfusion, pO2" 39.9265726910954 }
+{ VAR "Brain Perfusion, Basic Conduct." 9.1 }
+{ VAR "Brain Composition, Solid Mass" 500. }
+{ VAR "Brain CO2, Is Dyspnic" 0. }
+{ VAR "Brain CO2, Diffusion Coefficient" 2.1 }
+{ VAR "Brain HCO3-, Change" 6.55771207747435e-004 }
+{ VAR "Brain HCO3-, Mass" 56.9726884914538 }
+{ VAR "Brain Perfusion, Pump Setting" 0. }
+{ VAR "Brain Perfusion, Pump Switch" 0. }
+{ VAR "Brain pH, Basic SID" 9.e-002 }
+{ VAR "Bone Vascularity, Time Delay" 30. }
+{ VAR "Bone Vascularity, Change" 3.29837754850914e-006 }
+{ VAR "Bone Vascularity, Vessels" 1.03133161165926 }
+{ VAR "Bone Structure, Change" 0. }
+{ VAR "Bone Structure, Effect" 1. }
+{ VAR "Bone Cals Used, Normal" 90. }
+{ VAR "Bone Lactate, Has Substrate" 1. }
+{ VAR "Bone Lactate, Inhibition K" 1.5e-003 }
+{ VAR "Bone Lactate, Metabolism K" 1. }
+{ VAR "Bone Lactate, Formation K" 5.e-003 }
+{ VAR "Bone Lactate, Diffusion Coef." 3.e-002 }
+{ VAR "Bone Lactate, Change" 5.94565421538595e-006 }
+{ VAR "Bone Lactate, Mass (mEq/kG)" 1.81099696209001 }
+{ VAR "Bone Function, Failed" 0. }
+{ VAR "Bone Fuel, Use Rate Constant" 0.5 }
+{ VAR "Bone Fuel, Use Change" 0. }
+{ VAR "Bone Fuel, Fractional Use" 1. }
+{ VAR "Bone Perfusion, Imp. Lower Limit" 0. }
+{ VAR "Bone Perfusion, pO2" 35.1221390661094 }
+{ VAR "Bone Perfusion, Basic Conduct." 4.7 }
+{ VAR "Bone Composition, Solid Mass" 5835. }
+{ VAR "Bone CO2, Diffusion Coefficient" 0.6 }
+{ VAR "Bone HCO3-, Change" 2.70278116558905e-003 }
+{ VAR "Bone HCO3-, Mass" 230.045312894728 }
+{ VAR "Bone Perfusion, Pump Setting" 0. }
+{ VAR "Bone Perfusion, Pump Switch" 0. }
+{ VAR "Bone a-Receptors, Level" 0. }
+{ VAR "Bone a-Receptors, Clamp" 0. }
+{ VAR "Bone pH, Basic SID" 9.e-002 }
+{ VAR "Transfusion, Last State" 0. }
+{ VAR "Transfusion, Hct (%)" 44. }
+{ VAR "Transfusion, Cumulative Volume" 0. }
+{ VAR "Transfusion, Volume Added" 0. }
+{ VAR "Transfusion, Duration" 10. }
+{ VAR "Transfusion, Final Volume" 450. }
+{ VAR "Transfusion, Switch" 0. }
+{ VAR "Ruptured Vein, Flow" 0. }
+{ VAR "Ruptured Vein, Open" 0. }
+{ VAR "Ruptured Artery, Flow" 0. }
+{ VAR "Ruptured Artery, Open" 0. }
+{ VAR "Red Cells, Made Clamp Rate" 1.4e-002 }
+{ VAR "Red Cells, Made Clamp Switch" 0. }
+{ VAR "Red Cells, Destruction Tau" 120. }
+{ VAR "Red Cells, Basic Production" 1.4e-002 }
+{ VAR "Red Cells, Change" 2.92071970921618e-002 }
+{ VAR "Red Cells, Volume (mL)" 2589.95274571769 }
+{ VAR "Plasma Volume, Volume" 3038.03543995401 }
+{ VAR "H2O Load, Glucose (%)" 5. }
+{ VAR "H2O Load, Cumulative Volume" 0. }
+{ VAR "H2O Load, Duration" 10. }
+{ VAR "H2O Load, Final Volume" 1000. }
+{ VAR "H2O Load, Switch" 0. }
+{ VAR "EPO, Delayed Tau" 3. }
+{ VAR "EPO, Delayed Change" 7.2145091643763e-005 }
+{ VAR "EPO, Delayed Effect" 3.15766835397067 }
+{ VAR "EPO Pump, Setting" 0. }
+{ VAR "EPO Pump, Switch" 0. }
+{ VAR "EPO, Loss Tau" 3. }
+{ VAR "EPO, Synthesis Clamp" 0. }
+{ VAR "EPO, Basic Synthesis" 0.75 }
+{ VAR "EPO, Synthesis" 41.2825866584237 }
+{ VAR "EPO, Change" -0.393888265953658 }
+{ VAR "EPO, Mass (U)" 8207.99013184345 }
+{ VAR "Venous Blood Sample, Hematocrit (%)" 1.e+305 }
+{ VAR "Venous Blood Sample, Osmolarity" 1.e+305 }
+{ VAR "Venous Blood Sample, [Protein]" 1.e+305 }
+{ VAR "Venous Blood Sample, [BUN]" 1.e+305 }
+{ VAR "Venous Blood Sample, [Cl-]" 1.e+305 }
+{ VAR "Venous Blood Sample, [K+]" 1.e+305 }
+{ VAR "Venous Blood Sample, [Na+]" 1.e+305 }
+{ VAR "Venous Blood Sample, Last Sample" 1.e+305 }
+{ VAR "Blood Composition, Fract. RBCs H2O" 0.5 }
+{ VAR "Arterial Hemorrhage, Cumulative Volume" 0. }
+{ VAR "Arterial Hemorrhage, Rate" 0. }
+{ VAR "Arterial Hemorrhage, Duration" 10. }
+{ VAR "Arterial Hemorrhage, Final Volume" 450. }
+{ VAR "Arterial Hemorrhage, End Time" 0. }
+{ VAR "Arterial Hemorrhage, Start Time" 0. }
+{ VAR "Arterial Hemorrhage, Switch" 0. }
+{ VAR "Urine Specimen, Osmolarity" 1.e+305 }
+{ VAR "Urine Specimen, [Urea]" 1.e+305 }
+{ VAR "Urine Specimen, [Na+]" 1.e+305 }
+{ VAR "Urine Specimen, [SO4--]" 1.e+305 }
+{ VAR "Urine Specimen, [Protein]" 1.e+305 }
+{ VAR "Urine Specimen, [K+]" 1.e+305 }
+{ VAR "Urine Specimen, [PO4--]" 1.e+305 }
+{ VAR "Urine Specimen, [NH4+]" 1.e+305 }
+{ VAR "Urine Specimen, [KA-]" 1.e+305 }
+{ VAR "Urine Specimen, [HCO3-]" 1.e+305 }
+{ VAR "Urine Specimen, [Glucose]" 1.e+305 }
+{ VAR "Urine Specimen, [Creatinine]" 1.e+305 }
+{ VAR "Urine Specimen, [Cl-]" 1.e+305 }
+{ VAR "Urine Specimen, Time Last Sample" 1.e+305 }
+{ VAR "Bladder Urea, Mass" 13194.3241008097 }
+{ VAR "Bladder Na+, Mass" 78.3938757138358 }
+{ VAR "Bladder SO4--, Mass" 20.3542191170724 }
+{ VAR "Bladder Protein, Mass" 0. }
+{ VAR "Bladder K+, Mass" 30.0851412936149 }
+{ VAR "Bladder PO4--, Mass" 12.2125314744861 }
+{ VAR "Bladder NH4+, Mass" 25.3565845499559 }
+{ VAR "Bladder KA-, Mass" 1.21951794087091e-003 }
+{ VAR "Bladder HCO3-, Mass" 4.66043900758153 }
+{ VAR "Bladder Glucose, Mass" 0. }
+{ VAR "Bladder Creatinine, Mass" 728.604287658637 }
+{ VAR "Bladder Cl-, Mass" 96.6071923030822 }
+{ VAR "Bladder, Outflow" 0.860808508171496 }
+{ VAR "Bladder, Volume" 500. }
+{ VAR "Anesthesia IV Skin, Mass" 0. }
+{ VAR "Anesthesia IV Respiratory Muscle, Mass" 0. }
+{ VAR "Anesthesia IV Right Heart, Mass" 0. }
+{ VAR "Anesthesia IV Other Tissue, Mass" 0. }
+{ VAR "Anesthesia IV Skeletal Muscle, Mass" 0. }
+{ VAR "Anesthesia IV Liver, Degradation Rate Const" 9.e-002 }
+{ VAR "Anesthesia IV Liver, Mass" 0. }
+{ VAR "Anesthesia IV Left Heart, Mass" 0. }
+{ VAR "Anesthesia IV Kidney, Mass" 0. }
+{ VAR "Anesthesia IV GI Tract, Mass" 0. }
+{ VAR "Anesthesia IV Fat, Mass" 0. }
+{ VAR "Anesthesia IV Brain, Mass" 0. }
+{ VAR "Anesthesia IV Bone, Mass" 0. }
+{ VAR "Anesthesia IV Vein, Blood Volume" 3860. }
+{ VAR "Anesthesia IV Vein, Mass" 0. }
+{ VAR "Anesthesia IV Solubility, Adipose Tissue" 13.3 }
+{ VAR "Anesthesia IV Solubility, Brain" 1.3 }
+{ VAR "Anesthesia IV Solubility, General Tissue" 1. }
+{ VAR "Anesthesia IV Injection, Cumulative Dose" 0. }
+{ VAR "Anesthesia IV Injection, Total Number" 0. }
+{ VAR "Anesthesia IV Injection, Dose" 300. }
+{ VAR "Anesthesia IV Injection, Timespan" 30. }
+{ VAR "Anesthesia IV Injection, Change" 0. }
+{ VAR "Anesthesia IV Injection, Bolus" 0. }
+{ VAR "Anesthesia IV Infusion, Pump Setting" 0. }
+{ VAR "Anesthesia IV Infusion, Pump Switch" 0. }
+{ VAR "Anesthesia IV Artery, Blood Volume" 1340. }
+{ VAR "Anesthesia IV Artery, Mass" 0. }
+{ VAR "Pulmonary Hypoxia, Delayed Tau" 5. }
+{ VAR "Pulmonary Hypoxia, Delayed Change" -5.17956659235198e-004 }
+{ VAR "Pulmonary Hypoxia, Delayed Effect" 0.884049484803322 }
+{ VAR "Pulmonary ANP, Delayed Tau" 20. }
+{ VAR "Pulmonary ANP, Delayed Change" 0. }
+{ VAR "Pulmonary ANP, Delayed Effect" 1. }
+{ VAR "ANP Kidney, Delay Tau" 20. }
+{ VAR "ANP Kidney, Change" 1.2906082179212e-003 }
+{ VAR "ANP Kidney, Conc" 22.742789496564 }
+{ VAR "ANP Systemic Veins, Pump Setting" 0. }
+{ VAR "ANP Systemic Veins, Pump Switch" 0. }
+{ VAR "ANP Rgh Hrt Synthesis, Basic Rate" 40. }
+{ VAR "ANP Rgh Hrt Synthesis, Stimulus Tau" 1. }
+{ VAR "ANP Rgh Hrt Synthesis, Stimulus Change" 1.60055616814526e-005 }
+{ VAR "ANP Rgh Hrt Synthesis, Stimulus" 1.3603148193872 }
+{ VAR "ANP Rgh Hrt Secretion, Basic Fraction" 5.e-004 }
+{ VAR "ANP Rgh Hrt Secretion, Stimulus Tau" 20. }
+{ VAR "ANP Rgh Hrt Secretion, Stimulus Change" 1.05360844493571e-003 }
+{ VAR "ANP Rgh Hrt Secretion, Stimulus" 1.3682877904198 }
+{ VAR "ANP Rgh Hrt Cavity, Change" 0.715190336094342 }
+{ VAR "ANP Rgh Hrt Cavity, Mass" 79272.8419959683 }
+{ VAR "ANP Periphery, Degradation Rate Const" 0.13 }
+{ VAR "ANP Periphery, Change" -3.31792524591023e-002 }
+{ VAR "ANP Periphery, Mass" 235.885207025921 }
+{ VAR "ANP Lungs, Extraction" 0.27 }
+{ VAR "ANP Lft Hrt Synthesis, Basic Rate" 26. }
+{ VAR "ANP Lft Hrt Synthesis, Stimulus Tau" 1. }
+{ VAR "ANP Lft Hrt Synthesis, Stimulus Change" 3.16593643112935e-005 }
+{ VAR "ANP Lft Hrt Synthesis, Stimulus" 1.26311249897548 }
+{ VAR "ANP Lft Hrt Secretion, Basic Fraction" 5.e-004 }
+{ VAR "ANP Lft Hrt Secretion, Stimulus Tau" 20. }
+{ VAR "ANP Lft Hrt Secretion, Stimulus Change" 1.44025707397767e-003 }
+{ VAR "ANP Lft Hrt Secretion, Stimulus" 1.28803142725853 }
+{ VAR "ANP Lft Hrt Cavity, Change" 0.495698261862865 }
+{ VAR "ANP Lft Hrt Cavity, Mass" 50949.9935898417 }
+{ VAR "ADH Secretion, Basic Fraction" 1.e-003 }
+{ VAR "ADH Secretion, Level" 0. }
+{ VAR "ADH Secretion, Clamp" 0. }
+{ VAR "ADH Secretion, Rate" 3.08154387003321 }
+{ VAR "ADH Synthesis, Basic Rate" 3.2 }
+{ VAR "ADH Synthesis, Level" 0. }
+{ VAR "ADH Synthesis, Clamp" 0. }
+{ VAR "ADH Synthesis, Rate" 3.0848608618734 }
+{ VAR "ADH Pituitary, Fast -> Slow K" 5.3e-003 }
+{ VAR "ADH Pituitary, Slow -> Fast K" 1.e-003 }
+{ VAR "ADH Slow Release, Mass" 17114.3300578775 }
+{ VAR "ADH Fast Release, Change" -1.09167297246848e-002 }
+{ VAR "ADH Fast Release, Mass" 3228.66180359013 }
+{ VAR "ADH Kidney, Level" 0. }
+{ VAR "ADH Kidney, Clamp" 0. }
+{ VAR "ADH Kidney, Delay Tau" 20. }
+{ VAR "ADH Kidney, Change" -3.76526134149055e-004 }
+{ VAR "ADH Kidney, Conc Delayed" 2.19311014430607 }
+{ VAR "ADH Clearance, Other Extraction" 380. }
+{ VAR "ADH Clearance, Kidney Extraction" 0.95 }
+{ VAR "ADH Clearance, Liver Extraction" 0.82 }
+{ VAR "ADH Block, Percent" 0. }
+{ VAR "ADH Pump, Setting" 0. }
+{ VAR "ADH Pump, Switch" 0. }
+{ VAR "ADH ECFV, Change" 1.87623369390028e-002 }
+{ VAR "ADH ECFV, Mass" 32.6923422630399 }
+{ VAR "Anesthesia Gas Skin, Mass" 0. }
+{ VAR "Anesthesia Gas Respiratory Muscle, Mass" 0. }
+{ VAR "Anesthesia Gas Right Heart, Mass" 0. }
+{ VAR "Anesthesia Gas Other Tissue, Mass" 0. }
+{ VAR "Anesthesia Gas Skeletal Muscle, Mass" 0. }
+{ VAR "Anesthesia Gas Liver, Mass" 0. }
+{ VAR "Anesthesia Gas Left Heart, Mass" 0. }
+{ VAR "Anesthesia Gas Kidney, Mass" 0. }
+{ VAR "Anesthesia Gas GI Tract, Mass" 0. }
+{ VAR "Anesthesia Gas Fat, Mass" 0. }
+{ VAR "Anesthesia Gas Brain, Mass" 0. }
+{ VAR "Anesthesia Gas Bone, Mass" 0. }
+{ VAR "Anesthesia Gas Solubility, Adipose Tissue" 63. }
+{ VAR "Anesthesia Gas Solubility, Brain" 3.6 }
+{ VAR "Anesthesia Gas Solubility, Tissue" 4.2 }
+{ VAR "Anesthesia Gas Solubility, Blood" 1.4 }
+{ TOOLBAR 21606 ALLONEVISIBLE }
